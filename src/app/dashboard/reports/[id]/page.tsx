@@ -157,7 +157,7 @@ export default function ReportDetailPage({ params }: { params: Promise<{ id: str
                 </div>
                 <div>
                   <strong className="text-slate-700">Temporal Context:</strong>{" "}
-                  <span className="capitalize text-slate-800">{report.nlpAnalysis.temporalContext.replace("_", " ")}</span>
+                  <span className="capitalize text-slate-800">{report.nlpAnalysis.temporalContext?.replace("_", " ") ?? "active present"}</span>
                 </div>
                 <div>
                   <strong className="text-slate-700">Urgency Assessment:</strong>{" "}
